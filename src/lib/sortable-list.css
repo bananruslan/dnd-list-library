@@ -1,0 +1,7 @@
+.sortable-list__item {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease-out, opacity 0.25s ease-out;
+}

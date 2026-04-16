@@ -1,0 +1,62 @@
+{
+  "name": "dnd-list",
+  "version": "0.1.0",
+  "description": "Vertical drag-and-drop lists with spring physics, mouse and touch input.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "drag-and-drop",
+    "sortable",
+    "list",
+    "spring",
+    "animation",
+    "touch",
+    "pointer",
+    "reorder"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "README-ru.md",
+    "LICENSE"
+  ],
+  "main": "./dist/dnd-list.js",
+  "module": "./dist/dnd-list.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/dnd-list.js",
+      "default": "./dist/dnd-list.js"
+    },
+    "./style.css": "./dist/dnd-list.css",
+    "./sortable-list.css": "./dist/dnd-list.css",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --config vite.lib.config.ts && tsc -p tsconfig.lib.json",
+    "build:demo": "vite build",
+    "preview": "vite preview",
+    "prepack": "npm run build",
+    "publish:npm": "npm publish",
+    "release": "bumpp -x \"npm publish\"",
+    "release:patch": "bumpp patch -y --no-commit --no-tag --no-push -x \"npm publish\"",
+    "release:minor": "bumpp minor -y --no-commit --no-tag --no-push -x \"npm publish\"",
+    "release:major": "bumpp major -y --no-commit --no-tag --no-push -x \"npm publish\"",
+    "release:patch:git": "bumpp patch -y --no-push -x \"npm publish\"",
+    "release:minor:git": "bumpp minor -y --no-push -x \"npm publish\"",
+    "release:major:git": "bumpp major -y --no-push -x \"npm publish\""
+  },
+  "devDependencies": {
+    "bumpp": "^11.0.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4"
+  }
+}
