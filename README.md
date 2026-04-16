@@ -1,5 +1,7 @@
 # dnd-list-library
 
+[![npm](https://img.shields.io/npm/v/dnd-list-library.svg)](https://www.npmjs.com/package/dnd-list-library)
+
 **Languages:** English (this file) · [Русский — README-ru.md](README-ru.md)
 
 A small library for vertical drag-and-drop lists with spring motion and mouse / touch input.
