@@ -1,5 +1,5 @@
 {
-  "name": "dnd-list",
+  "name": "dnd-list-library",
   "version": "0.1.0",
   "description": "Vertical drag-and-drop lists with spring physics, mouse and touch input.",
   "type": "module",
@@ -23,17 +23,17 @@
     "README-ru.md",
     "LICENSE"
   ],
-  "main": "./dist/dnd-list.js",
-  "module": "./dist/dnd-list.js",
+  "main": "./dist/dnd-list-library.js",
+  "module": "./dist/dnd-list-library.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/dnd-list.js",
-      "default": "./dist/dnd-list.js"
+      "import": "./dist/dnd-list-library.js",
+      "default": "./dist/dnd-list-library.js"
     },
-    "./style.css": "./dist/dnd-list.css",
-    "./sortable-list.css": "./dist/dnd-list.css",
+    "./style.css": "./dist/dnd-list-library.css",
+    "./sortable-list.css": "./dist/dnd-list-library.css",
     "./package.json": "./package.json"
   },
   "engines": {
